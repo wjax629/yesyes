@@ -1,0 +1,26 @@
+cs-skin-marketplace/
+│
+├── backend/
+│   ├── server.js
+│   ├── steam.js
+│   ├── marketplace.js
+│   ├── escrow.js
+│   ├── payments.js
+│   ├── package.json
+│   └── .env.example
+│
+├── frontend/
+│   ├── pages/
+│   │   ├── index.js
+│   │   ├── dashboard.js
+│   │   └── marketplace.js
+│   ├── components/
+│   │   ├── InventoryGrid.js
+│   │   └── BuySkinButton.js
+│   ├── styles/
+│   │   └── globals.css
+│   ├── package.json
+│   └── tailwind.config.js
+│
+└── database/
+    └── schema.sql
