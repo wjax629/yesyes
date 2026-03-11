@@ -1,0 +1,25 @@
+CREATE TABLE users (
+  id SERIAL PRIMARY KEY,
+  steam_id VARCHAR(50) UNIQUE,
+  username TEXT,
+  reputation INT DEFAULT 0
+);
+
+CREATE TABLE listings (
+  id SERIAL PRIMARY KEY,
+  item_name TEXT,
+  price NUMERIC,
+  asset_id TEXT,
+  seller_id VARCHAR(50),
+  icon_url TEXT,
+  rarity TEXT,
+  status TEXT DEFAULT 'active'
+);
+
+CREATE TABLE transactions (
+  id SERIAL PRIMARY KEY,
+  listing_id INT,
+  buyer_id VARCHAR(50),
+  status TEXT,
+  stripe_payment_intent TEXT
+);
